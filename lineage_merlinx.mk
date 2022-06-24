@@ -46,5 +46,18 @@ TARGET_VENDOR := xiaomi
 TARGET_VENDOR_PRODUCT_NAME := merlinx
 PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="merlin-user 11 RP1A.200720.011 V12.0.1.0.RJOMIXM release-keys"
 
+# maintainer flag
+RICE_MAINTAINER := Kaike_&_LuMorningStarr
+
+# gapps build flag, if not defined build type is vanilla
+# GAPPS package is similar to core gapps
+WITH_GAPPS := false
+
+# disable/enable blur support, default is false
+TARGET_ENABLE_BLUR := false
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := Redmi/merlin/merlin:11/RP1A.200720.011/V12.0.1.0.RJOMIXM:user/release-keys

@@ -23,6 +23,7 @@ TARGET_BOOTLOADER_BOARD_NAME := merlinx
 
 # Kernel
 TARGET_KERNEL_CONFIG := merlin_defconfig
+TARGET_KERNEL_CLANG_VERSION := proton
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := merlin,merlinx,merlin_eea,merlinnfc
