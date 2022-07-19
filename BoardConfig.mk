@@ -24,6 +24,7 @@ TARGET_BOOTLOADER_BOARD_NAME := merlinx
 # Kernel
 TARGET_KERNEL_CONFIG := merlin_defconfig
 TARGET_KERNEL_CLANG_VERSION := proton
+TARGET_KERNEL_ADDITIONAL_FLAGS := HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := merlin,merlinx,merlin_eea,merlinnfc
